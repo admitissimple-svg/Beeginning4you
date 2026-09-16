@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import AboutUs from './components/AboutUs';
 import Philosophy from './components/Philosophy';
 import Solutions from './components/Solutions';
 import TargetAudience from './components/TargetAudience';
@@ -46,26 +47,29 @@ export default function App() {
         {/* 1. Hero Section */}
         <Hero onOpenDiagnostic={handleOpenDiagnostic} />
 
-        {/* 2. Philosophy & Manifesto: Ideia ➔ Forma ➔ Solução */}
+        {/* 2. Quem Somos: O Conceito e o Símbolo do Infinito */}
+        <AboutUs />
+
+        {/* 3. Philosophy & Manifesto: Ideia ➔ Forma ➔ Solução */}
         <Philosophy />
 
-        {/* 3. What We Do: Digital Solutions for Small Businesses */}
+        {/* 4. What We Do: Digital Solutions for Small Businesses */}
         <Solutions onSelectSolutionForContact={handleSelectSolutionForContact} />
 
-        {/* 4. Target Audience: Para Quem é? */}
+        {/* 5. Target Audience: Para Quem é? */}
         <TargetAudience />
 
-        {/* 5. Real Stories / Use Cases */}
+        {/* 6. Real Stories / Use Cases */}
         <UseCases />
 
-        {/* 6. Contact & Practical Diagnostic Form */}
+        {/* 7. Contact & Practical Diagnostic Form */}
         <ContactSection
           prefilledNeed={prefilledNeed}
           prefilledSolution={prefilledSolution}
         />
       </main>
 
-      {/* 7. Footer */}
+      {/* 8. Footer */}
       <Footer />
 
       {/* Interactive Diagnostic Quiz Modal */}

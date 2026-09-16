@@ -48,6 +48,14 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="#quem-somos"
+                  className="hover:text-[#E5A93B] transition-colors"
+                >
+                  Quem Somos & O Conceito
+                </a>
+              </li>
+              <li>
+                <a
                   href="#filosofia"
                   className="hover:text-[#E5A93B] transition-colors"
                 >

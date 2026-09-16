@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import BeeLogo from './BeeLogo';
-import workspacePhoto from '../assets/images/workspace_laptop_coffee_1789424014300.jpg';
+import workspacePhoto from '../assets/images/vivobook_rose_workspace_1789572652740.jpg';
 
 interface HeroProps {
   onOpenDiagnostic: () => void;
@@ -61,7 +61,8 @@ export default function Hero({ onOpenDiagnostic }: HeroProps) {
               {/* Authentic photographic scene */}
               <img
                 src={workspacePhoto}
-                alt="Espaço de trabalho acolhedor com laptop aberto e café na mesa de madeira"
+                alt="Espaço de trabalho inspirador com notebook ASUS Vivobook rosé e café na mesa de madeira"
+                referrerPolicy="no-referrer"
                 className="absolute inset-0 w-full h-full object-cover object-right sm:object-center select-none"
               />
               {/* Soft warm light-linen gradient for maximum text contrast */}

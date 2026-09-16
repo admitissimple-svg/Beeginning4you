@@ -19,6 +19,7 @@ export default function Header({ onOpenDiagnostic }: HeaderProps) {
 
   const navLinks = [
     { label: 'Início', href: '#inicio' },
+    { label: 'Quem Somos', href: '#quem-somos' },
     { label: 'Filosofia', href: '#filosofia' },
     { label: 'O Que Fazemos', href: '#solucoes' },
     { label: 'Para Quem', href: '#para-quem' },
@@ -45,11 +46,10 @@ export default function Header({ onOpenDiagnostic }: HeaderProps) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative flex items-center justify-end h-16 sm:h-20">
-          {/* Desktop Navigation: Absolutely and mathematically centered over the header and hero panel */}
+        <div className="flex items-center justify-between h-16 sm:h-20 w-full">
+          {/* Desktop Navigation: Aligned from the left boundary matching the hero panel below */}
           <nav
-            className="hidden lg:flex items-center space-x-0.5 xl:space-x-1 absolute left-1/2 -translate-x-1/2 pointer-events-auto"
-            style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)' }}
+            className="hidden lg:flex items-center space-x-0.5 xl:space-x-1 pointer-events-auto -ml-2"
             aria-label="Navegação Principal"
           >
             {navLinks.map((link) => (
@@ -65,8 +65,8 @@ export default function Header({ onOpenDiagnostic }: HeaderProps) {
             ))}
           </nav>
 
-          {/* CTA Buttons (Desktop) */}
-          <div className="hidden sm:flex items-center gap-2 xl:gap-2.5 shrink-0 z-10">
+          {/* CTA Buttons (Desktop) aligned to the right boundary */}
+          <div className="hidden sm:flex items-center gap-2 xl:gap-2.5 shrink-0 z-10 -mr-1 sm:mr-0">
             <button
               id="header-diagnostic-btn"
               onClick={onOpenDiagnostic}
